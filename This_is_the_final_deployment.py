@@ -1,6 +1,6 @@
 import streamlit as st
-from streamlit_lottie import st_lottie
-import requests
+# from streamlit_lottie import st_lottie
+# import requests
 import pandas as pd
 import base64
 
