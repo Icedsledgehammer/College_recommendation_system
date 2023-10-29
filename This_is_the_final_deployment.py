@@ -49,19 +49,19 @@ st.write("Hey there, future engineer! Welcome to our college recommendation page
 
 # Body section
 left_column, right_column = st.columns(2)
-def load_lottieurl(url):
-    r = requests.get(url)
-    if r.status_code != 200:
-        return None
-    return r.json()
+# def load_lottieurl(url):
+#     r = requests.get(url)
+#     if r.status_code != 200:
+#         return None
+#     return r.json()
 
-lottie_college = load_lottieurl("https://lottie.host/63160ac6-2091-43db-a153-49ab78c5a0cb/YDB40RDjYR.json")
+# lottie_college = load_lottieurl("https://lottie.host/63160ac6-2091-43db-a153-49ab78c5a0cb/YDB40RDjYR.json")
 
-with right_column:
-    if lottie_college is not None:
-        st_lottie(lottie_college, height = 300, key = "coding")
-    else:
-        st.write("Lottie animation could not be loaded.")
+# with right_column:
+#     if lottie_college is not None:
+#         st_lottie(lottie_college, height = 300, key = "coding")
+#     else:
+#         st.write("Lottie animation could not be loaded.")
 
 with left_column:
     # Input criteria from the student
